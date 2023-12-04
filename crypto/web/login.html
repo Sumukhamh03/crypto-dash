@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login|Cryptocurrency</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <form action="#" id="login-form">
+        <h2>Login</h2>
+          <div class="input-field">
+          <input type="text" required id="txtEmail">
+          <label>Enter your email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" required id="txtPassword">
+          <label>Enter your password</label>
+        </div>
+        <div class="forget">
+          <label for="remember">
+            <input type="checkbox" id="remember">
+            <p>Remember me</p>
+          </label>
+          <a href="#" id="forgot-password">Forgot password?</a>
+        </div>
+        <button type="submit" id="btnLogin">Log In</button>
+        <div class="register">
+          <p>Don't have an account? <a href="reg.html">Register</a></p>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/auth.js">
+    </script>
+  </body>
+  </html>
+  
